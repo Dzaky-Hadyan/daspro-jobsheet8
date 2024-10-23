@@ -4,6 +4,7 @@ public class PersegiAngka {
         Scanner sc = new Scanner(System.in);
         System.out.print("Masukkan angka: ");
         int N = sc.nextInt();
+        if (N > 2) {
         int baris = 1;
         do {
             int kolom = 1;
@@ -21,5 +22,8 @@ public class PersegiAngka {
         baris++;
         } while (baris <= N);
         sc.close();
+        } else {
+            System.out.print("Input Invalid");
+        }
     }
 }
